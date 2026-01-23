@@ -1,0 +1,72 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #4b4b4c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.95rem;
+}
+.form-control {
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ced4da;
+
+}
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  padding: 0.75rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+}
+.btn-outline-secondary {
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+
+@media (max-width: 786px) {
+  body {
+    padding: 3rem;
+  }
+
+.img-page {
+    display: none !important;
+  }
+
+
+  h3, p {
+    text-align: center;
+  }
+
+ 
+
+}
+
+
+
+
+
+
