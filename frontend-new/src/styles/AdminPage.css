@@ -1,0 +1,11 @@
+.admin-page {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%, #f093fb 100%);
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.admin-page > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

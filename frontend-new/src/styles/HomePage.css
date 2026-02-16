@@ -1,0 +1,133 @@
+.home-page {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%, #f093fb 100%);
+  min-height: 100vh;
+  padding: 0;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,50 Q200,0 400,50 T800,50 T1200,50 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.1)"></path></svg>');
+  background-repeat: repeat-x;
+  animation: wave 15s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1200px);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 0 0 20px 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content .lead {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  font-weight: 300;
+}
+
+.hero-content .subtitle {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  margin: 20px 0 0 0;
+}
+
+.features-section {
+  background: white;
+  padding: 60px 20px;
+}
+
+.feature-card {
+  background: white;
+  padding: 30px;
+  margin: 15px 0;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-top: 4px solid #667eea;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.2);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  color: #333;
+  font-weight: 600;
+  margin: 15px 0;
+  font-size: 1.3rem;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.chat-section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-section p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content .lead {
+    font-size: 1.2rem;
+  }
+
+  .feature-card {
+    margin: 0 0 20px 0;
+  }
+}

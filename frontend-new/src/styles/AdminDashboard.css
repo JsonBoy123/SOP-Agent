@@ -1,0 +1,138 @@
+.admin-dashboard {
+  background: #f8f9fa;
+  padding: 30px 0;
+  min-height: 100vh;
+}
+
+.admin-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 12px;
+}
+
+.admin-header h2 {
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.admin-header p {
+  margin: 0;
+  opacity: 0.95;
+  font-size: 1.1rem;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #667eea;
+  margin: 0;
+}
+
+.stat-label {
+  color: #999;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.documents-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.documents-section h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.table {
+  margin: 0;
+}
+
+.table thead th {
+  border: none;
+  background: #f0f4ff;
+  color: #667eea;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 8px 8px 0 0;
+}
+
+.table tbody tr {
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.table tbody td {
+  padding: 15px;
+  vertical-align: middle;
+  color: #555;
+}
+
+.table .btn-warning {
+  background: #ffc107;
+  border: none;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.table .btn-warning:hover {
+  background: #ff9800;
+  transform: translateY(-2px);
+}
+
+.table .btn-danger {
+  background: #dc3545;
+  border: none;
+  color: white;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.table .btn-danger:hover:not(:disabled) {
+  background: #c82333;
+  transform: translateY(-2px);
+}
+
+.table .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.text-muted {
+  color: #999 !important;
+  font-style: italic;
+}

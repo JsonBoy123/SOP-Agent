@@ -1,0 +1,72 @@
+.file-upload {
+  height: 100%;
+}
+
+.upload-area {
+  border: 3px dashed #e0e0e0;
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.upload-area.dragging {
+  border-color: #667eea;
+  background: #f0f4ff;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+.upload-content {
+  pointer-events: none;
+}
+
+.upload-icon {
+  width: 64px;
+  height: 64px;
+  color: #667eea;
+  margin: 0 auto 20px;
+  opacity: 0.7;
+}
+
+.upload-area h3 {
+  margin: 20px 0 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+.upload-area p {
+  color: #999;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.upload-area .btn {
+  margin-top: 20px;
+  pointer-events: auto;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.upload-area .btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+}
+
+.upload-area .btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.upload-area .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

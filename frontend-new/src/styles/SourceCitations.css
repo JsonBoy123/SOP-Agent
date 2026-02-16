@@ -1,0 +1,99 @@
+.source-citations {
+  margin-top: 15px;
+  padding: 12px;
+  background: #f0f4ff;
+  border-left: 4px solid #667eea;
+  border-radius: 8px;
+}
+
+.sources-header {
+  margin: 0 0 10px 0;
+}
+
+.sources-header h5 {
+  margin: 0;
+  color: #667eea;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.sources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.source-item {
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.source-button {
+  width: 100%;
+  padding: 10px 12px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+  font-size: 0.85rem;
+}
+
+.source-button:hover {
+  background: #f8f9ff;
+  border-left: 3px solid #667eea;
+  padding-left: 9px;
+}
+
+.source-number {
+  font-weight: 600;
+  color: #667eea;
+  min-width: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.source-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.source-info strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.expand-icon {
+  color: #999;
+  font-size: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.source-button[aria-expanded="true"] .expand-icon {
+  transform: rotate(90deg);
+}
+
+.source-details {
+  padding: 12px;
+  background: #f8f9ff;
+  font-size: 0.85rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.source-details p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.source-details strong {
+  color: #333;
+  font-weight: 600;
+}
